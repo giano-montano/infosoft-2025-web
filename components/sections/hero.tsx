@@ -14,7 +14,7 @@ export function Hero() {
           <div className="flex flex-col items-end gap-8">
             <div className="text-right space-y-2">
               <p className="text-2xl md:text-3xl lg:text-4xl font-light tracking-wide text-foreground">
-                18 - 19.12.2025
+                17 - 19.12.2025
               </p>
               <p className="text-lg md:text-xl text-muted-foreground">Campus PUCP</p>
             </div>
