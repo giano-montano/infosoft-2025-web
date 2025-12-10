@@ -4,9 +4,9 @@ export interface NavItem {
 }
 
 export const NAV_ITEMS: NavItem[] = [
-  { label: "¿Qué es Infosoft?", href: "#about" },
-  { label: "Programa", href: "#program" },
-  { label: "Ponentes", href: "#speakers" },
-  { label: "Organización", href: "#organization" },
-  { label: "Contacto", href: "#contact" },
+  { label: "¿Qué es Infosoft?", href: "/que-es-infosoft" },
+  { label: "Programa", href: "/programa" },
+  { label: "Ponentes", href: "/ponentes" },
+  { label: "Organización", href: "/organizacion" },
+  { label: "Contacto", href: "/contacto" },
 ]

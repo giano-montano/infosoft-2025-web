@@ -3,6 +3,9 @@ import type { Metadata } from "next"
 import { Inter, Geist_Mono } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
+import { alexandria } from "@/components/ui/fonts"
+import { Header } from "@/components/sections/header"
+import logoInfosoft from "@/assets/infosoft_cortado.png"
 
 const _inter = Inter({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
@@ -10,25 +13,9 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "INFOSOFT 2025 | Tecnología, Innovación e Investigación",
   description:
-    "El evento donde convergen la tecnología, la innovación y la investigación. 18 - 19 de Diciembre 2025, Campus PUCP.",
-  generator: "v0.app",
-  icons: {
-    icon: [
-      {
-        url: "/icon-light-32x32.png",
-        media: "(prefers-color-scheme: light)",
-      },
-      {
-        url: "/icon-dark-32x32.png",
-        media: "(prefers-color-scheme: dark)",
-      },
-      {
-        url: "/icon.svg",
-        type: "image/svg+xml",
-      },
-    ],
-    apple: "/apple-icon.png",
-  },
+    "El evento donde convergen la tecnología, la innovación y la investigación. 17 - 19 de Diciembre 2025, Campus PUCP.",
+  authors: [{name:"AEDITIP", url:"https://www.linkedin.com/company/aeditip/"},{ name: "Giano Montano", url: "https://www.linkedin.com/in/giano-monta%C3%B1o-8b1537349/" }],
+
 }
 
 export default function RootLayout({
@@ -38,7 +25,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`font-sans antialiased ${_inter.className}`}>
+      {/* className={`font-sans antialiased ${_inter.className}`} */}
+      <body className={`${alexandria.className} antialiased `}>
+        <Header />
         {children}
         <Analytics />
       </body>
