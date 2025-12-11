@@ -26,9 +26,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       {/* className={`font-sans antialiased ${_inter.className}`} */}
-      <body className={`${alexandria.className} antialiased `}>
+      <body className={`${alexandria.className} antialiased min-h-screen flex flex-col`}>
         <Header />
-        {children}
+        <main className="flex-1">
+          {children}
+        </main>
         {/* <Analytics /> */}
         <Footer />
       </body>
