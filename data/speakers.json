@@ -1,0 +1,21 @@
+[
+  {
+    "id": "carlos-mendoza",
+    "name": "Dr. Carlos Mendoza",
+    "role": "Director de Investigación",
+    "company": "TechLab PUCP",
+    "avatar": "speakers/carlos-mendoza.jpg",
+    "talks": [
+      { "title": "IA Generativa en la Industria", "type": "conference" },
+      { "title": "Panel: El Futuro del Trabajo Tech", "type": "panel" }
+    ]
+  },
+  {
+    "id": "maria-lopez",
+    "name": "Ing. María López",
+    "role": "Lead Security Engineer",
+    "company": "CyberDefense Corp",
+    "avatar": "speakers/maria-lopez.jpg",
+    "talks": [{ "title": "Ciberseguridad en 2025", "type": "conference" }]
+  }
+]

@@ -15,10 +15,10 @@ export function Hero() {
           {/* Right Content - Event Info & Visual */}
           <div className="flex flex-col items-center lg:items-end gap-6 md:gap-8">
             <div className="text-center lg:text-right space-y-1 md:space-y-2">
-              <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-light tracking-wide text-foreground">
+              <p className="text-2xl sm:text-2xl md:text-3xl lg:text-4xl font-light tracking-wide text-foreground">
                 17 - 19.12.2025
               </p>
-              <p className="text-base sm:text-lg md:text-xl text-muted-foreground">Campus PUCP</p>
+              <p className="text-lg sm:text-lg md:text-xl text-muted-foreground">Campus PUCP</p>
             </div>
 
             <div className="w-full max-w-[280px] sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl">

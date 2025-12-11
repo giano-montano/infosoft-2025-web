@@ -4,10 +4,10 @@
   "private": true,
   "scripts": {
     "build": "next build",
-    "dev": "next dev",
     "lint": "eslint .",
     "start": "next start",
-    "generate-icons": "svg-to-ts"
+      "dev": "pnpm run sync-images && next dev",
+  "sync-images": "cpx \"./data/images/**\" ./public/content/images -C"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
@@ -67,6 +67,7 @@
     "@types/node": "^22",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "cpx": "^1.5.0",
     "postcss": "^8.5",
     "tailwindcss": "^4.1.9",
     "tw-animate-css": "1.3.3",

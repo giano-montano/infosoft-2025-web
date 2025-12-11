@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 
 interface AbstractInfosoftFigureProps {
   size?: 'sm' | 'md' | 'lg' | 'xl' | 'full'
@@ -12,6 +12,46 @@ export default function AbstractInfosoftFigure({
   className = ''
 }: AbstractInfosoftFigureProps) {
     const [isHovered, setIsHovered] = useState(false)
+    const [isTouchDevice, setIsTouchDevice] = useState(false)
+
+    // Detectar si es dispositivo táctil (sin hover)
+    useEffect(() => {
+      const hasTouchSupport = 'ontouchstart' in window || navigator.maxTouchPoints > 0
+      const prefersNoHover = window.matchMedia('(hover: none)').matches
+      setIsTouchDevice(hasTouchSupport || prefersNoHover)
+    }, [])
+
+    // Auto-ciclo de animación solo para dispositivos táctiles
+    useEffect(() => {
+      if (!isTouchDevice) return
+
+      let timeout1: NodeJS.Timeout
+      let timeout2: NodeJS.Timeout
+      let timeout3: NodeJS.Timeout
+
+      const runCycle = () => {
+        // Esperar 3s antes de activar colores
+        timeout1 = setTimeout(() => {
+          setIsHovered(true)
+          
+          // Mantener colores por 5s
+          timeout2 = setTimeout(() => {
+            setIsHovered(false)
+            
+            // Esperar 1s (para que termine la transición) y repetir
+            timeout3 = setTimeout(runCycle, 1000)
+          }, 5000)
+        }, 2000)
+      }
+
+      runCycle()
+
+      return () => {
+        clearTimeout(timeout1)
+        clearTimeout(timeout2)
+        clearTimeout(timeout3)
+      }
+    }, [isTouchDevice])
 
     const sizeClasses = {
       sm: 'w-80 h-80',
@@ -78,6 +118,7 @@ export default function AbstractInfosoftFigure({
                 {/* Grupo rotatorio */}
                 <g transform="translate(250, 250)">
                     {/* Círculo invisible para detectar hover Y clicks (área circular completa) */}
+                    {/* Solo activar hover manual en dispositivos no táctiles */}
                     <a 
                         href="https://www.pucp.edu.pe" 
                         target="_blank" 
@@ -89,8 +130,8 @@ export default function AbstractInfosoftFigure({
                             cy="0"
                             r="180"
                             fill="transparent"
-                            onMouseEnter={() => setIsHovered(true)}
-                            onMouseLeave={() => setIsHovered(false)}
+                            onMouseEnter={() => !isTouchDevice && setIsHovered(true)}
+                            onMouseLeave={() => !isTouchDevice && setIsHovered(false)}
                         />
                     </a>
 

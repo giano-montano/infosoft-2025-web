@@ -1,0 +1,37 @@
+[
+  {
+    "date": "2025-12-17",
+    "dayLabel": "Miércoles 17",
+    "events": [
+      {
+        "id": "d17-01",
+        "title": "Ceremonia de Apertura",
+        "location": "Auditorio Principal",
+        "time": "09:00 - 10:00",
+        "type": "conference"
+      }
+    ]
+  },
+  {
+    "date": "2025-12-18",
+    "dayLabel": "Jueves 18",
+    "events": [
+      {
+        "id": "d18-01",
+        "title": "IA Generativa en la Industria",
+        "location": "Sala A",
+        "time": "10:30 - 12:00",
+        "type": "conference",
+        "speakerId": "carlos-mendoza"
+      },
+      {
+        "id": "d18-02",
+        "title": "Workshop: Desarrollo con Next.js 15",
+        "location": "Laboratorio 1",
+        "time": "14:00 - 17:00",
+        "type": "workshop"
+      }
+    ]
+  }
+]
+    
