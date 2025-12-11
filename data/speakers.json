@@ -1,21 +1,102 @@
 [
   {
-    "id": "carlos-mendoza",
-    "name": "Dr. Carlos Mendoza",
-    "role": "Director de Investigación",
-    "company": "TechLab PUCP",
-    "avatar": "speakers/carlos-mendoza.jpg",
+    "id": "gianpaul-custodio",
+    "name": "Gianpaul Custodio (HackeMate)",
+    "role": "CEO & Founder",
+    "company": "HackeMate",
+    "avatar": "speakers/gianpaul-custodio.jpg",
     "talks": [
-      { "title": "IA Generativa en la Industria", "type": "conference" },
-      { "title": "Panel: El Futuro del Trabajo Tech", "type": "panel" }
+      { "title": "Ciberseguridad Ofensiva y Hacking Ético", "type": "conference" }
     ]
   },
   {
-    "id": "maria-lopez",
-    "name": "Ing. María López",
-    "role": "Lead Security Engineer",
-    "company": "CyberDefense Corp",
-    "avatar": "speakers/maria-lopez.jpg",
-    "talks": [{ "title": "Ciberseguridad en 2025", "type": "conference" }]
+    "id": "sergio-solvy",
+    "name": "Sergio (Solvy)",
+    "role": "Tech Lead",
+    "company": "Solvy",
+    "avatar": "speakers/sergio-solvy.jpg",
+    "talks": [
+      { "title": "Innovación y Soluciones Ágiles", "type": "conference" }
+    ]
+  },
+  {
+    "id": "cesar-mendez",
+    "name": "Ing. Cesar Mendez",
+    "role": "Especialista Académico",
+    "company": "Cibertec",
+    "avatar": "speakers/cesar-mendez.jpg",
+    "talks": [
+      { "title": "Tendencias Tecnológicas y Educación", "type": "conference" }
+    ]
+  },
+  {
+    "id": "david-cybersen",
+    "name": "David (Cybersen)",
+    "role": "Security Consultant",
+    "company": "Cybersen",
+    "avatar": "speakers/david-cybersen.jpg",
+    "talks": [
+      { "title": "Gestión de Riesgos Digitales", "type": "conference" }
+    ]
+  },
+  {
+    "id": "paola-cybersen",
+    "name": "Paola (Cybersen)",
+    "role": "Analista de Ciberseguridad",
+    "company": "Cybersen",
+    "avatar": "speakers/paola-cybersen.jpg",
+    "talks": [
+      { "title": "Defensa en Profundidad", "type": "conference" }
+    ]
+  },
+  {
+    "id": "carlos-evangelista",
+    "name": "Carlos Evangelista",
+    "role": "CEO",
+    "company": "Inkamoney",
+    "avatar": "speakers/carlos-evangelista.jpg",
+    "talks": [
+      { "title": "Fintech: Revolución de los Pagos Digitales", "type": "conference" }
+    ]
+  },
+  {
+    "id": "sandro-ormeno",
+    "name": "Sandro Ormeño",
+    "role": "GDG Organizer & Tech Lead",
+    "company": "Google Developer Groups",
+    "avatar": "speakers/sandro-ormeno.jpg",
+    "talks": [
+      { "title": "Construyendo Comunidad y Tecnología Cloud", "type": "conference" }
+    ]
+  },
+  {
+    "id": "leonardo-cybersen",
+    "name": "Leonardo (Cybersen)",
+    "role": "Ingeniero de Seguridad",
+    "company": "Cybersen",
+    "avatar": "speakers/leonardo-cybersen.jpg",
+    "talks": [
+      { "title": "Infraestructura Segura", "type": "conference" }
+    ]
+  },
+  {
+    "id": "yiro-mendez",
+    "name": "Yiro Mendez",
+    "role": "Representante DIIA",
+    "company": "DIIA PUCP",
+    "avatar": "speakers/yiro-mendez.jpg",
+    "talks": [
+      { "title": "Inteligencia Artificial y Data Science", "type": "conference" }
+    ]
+  },
+  {
+    "id": "ridber-cybersen",
+    "name": "Ridber (Cybersen)",
+    "role": "Pentester Senior",
+    "company": "Cybersen",
+    "avatar": "speakers/ridber-cybersen.jpg",
+    "talks": [
+      { "title": "Auditoría de Sistemas Críticos", "type": "conference" }
+    ]
   }
 ]
