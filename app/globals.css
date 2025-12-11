@@ -119,3 +119,36 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer components {
+  .logo-gradiente{
+    @apply bg-gradient-to-r 
+    from-yellow-400 
+    via-orange-500
+     to-pink-500 transition-all duration-300;
+      /* text-black 
+      font-semibold 
+      hover:shadow-lg
+       hover:shadow-pink-500/50
+        hover:scale-105 
+        transition-all 
+        duration-300'*/
+  }
+
+    /* Variante con hover (si quieres animación extra) */
+  .logo-gradiente-hover {
+    @apply transition-transform duration-500;
+  }
+
+    .logo-gradiente-hover:hover {
+    @apply bg-linear-to-r 
+      from-yellow-400 
+      via-orange-500 
+      to-pink-500 
+      /* shadow-lg  */
+      /* shadow-pink-500/50  */
+      scale-105;
+  }
+
+
+}

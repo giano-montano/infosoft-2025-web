@@ -6,9 +6,9 @@ import "./globals.css"
 import { alexandria } from "@/components/ui/fonts"
 import { Header } from "@/components/sections/header"
 import logoInfosoft from "@/assets/infosoft_cortado.png"
+import { Footer } from "@/components/sections/footer"
 
-const _inter = Inter({ subsets: ["latin"] })
-const _geistMono = Geist_Mono({ subsets: ["latin"] })
+
 
 export const metadata: Metadata = {
   title: "INFOSOFT 2025 | Tecnología, Innovación e Investigación",
@@ -29,7 +29,8 @@ export default function RootLayout({
       <body className={`${alexandria.className} antialiased `}>
         <Header />
         {children}
-        <Analytics />
+        {/* <Analytics /> */}
+        <Footer />
       </body>
     </html>
   )
