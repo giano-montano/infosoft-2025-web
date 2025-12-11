@@ -1,9 +1,9 @@
 // app/programa/page.tsx  (Server Component)
-import { getSchedule } from "@/lib/content";
+import { getSchedule, getSpeakers } from "@/lib/content";
 import ProgramClient from "./ProgramClient";
 
 export default async function ProgramPage() {
-  const schedule = await getSchedule();
+  const [schedule, speakers] = await Promise.all([getSchedule(), getSpeakers()]);
 
-  return <ProgramClient schedule={schedule} />;
+  return <ProgramClient schedule={schedule} speakers={speakers} />;
 }

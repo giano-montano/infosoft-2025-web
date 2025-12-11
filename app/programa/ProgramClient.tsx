@@ -1,10 +1,10 @@
 // app/programa/ProgramClient.tsx
 "use client";
 
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import { SectionTitle } from "@/components/ui/section-title";
 import { ColorTag } from "@/components/ui/color-tag";
-import type { DaySchedule, ScheduleEvent } from "@/lib/types";
+import type { DaySchedule, ScheduleEvent, Speaker } from "@/lib/types";
 
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { MapPin, Clock } from "lucide-react";
@@ -17,9 +17,16 @@ export const FORMAT_OPTIONS = [
   { value: "networking", label: "Networking" },
 ];
 
-export default function ProgramClient({ schedule }: { schedule: DaySchedule[] }) {
+export default function ProgramClient({ schedule, speakers }: { schedule: DaySchedule[]; speakers: Speaker[] }) {
   const [selectedDay, setSelectedDay] = useState<string>("all");
   const [selectedFormat, setSelectedFormat] = useState<string>("all");
+
+  // Create speaker lookup map for O(1) access
+  const speakerMap = useMemo(() => {
+    const map = new Map<string, string>();
+    speakers.forEach((speaker) => map.set(speaker.id, speaker.name));
+    return map;
+  }, [speakers]);
 
   const filteredSchedule = schedule
     .filter((day) => (selectedDay !== "all" && day.date !== selectedDay ? false : true))
@@ -70,7 +77,7 @@ export default function ProgramClient({ schedule }: { schedule: DaySchedule[] })
               <h3 className="text-xl md:text-2xl font-semibold mb-6 text-foreground">{day.dayLabel}</h3>
               <div className="grid gap-4">
                 {day.events.length > 0 ? (
-                  day.events.map((event) => <EventCard key={event.id} event={event} />)
+                  day.events.map((event) => <EventCard key={event.id} event={event} speakerMap={speakerMap} />)
                 ) : (
                   <p className="text-muted-foreground py-8 text-center">No hay eventos que coincidan con los filtros seleccionados.</p>
                 )}
@@ -83,13 +90,15 @@ export default function ProgramClient({ schedule }: { schedule: DaySchedule[] })
   );
 }
 
-function EventCard({ event }: { event: ScheduleEvent }) {
+function EventCard({ event, speakerMap }: { event: ScheduleEvent; speakerMap: Map<string, string> }) {
+  const speakerName = event.speakerId ? speakerMap.get(event.speakerId) : null;
+
   return (
     <div className="flex gap-4 p-4 md:p-6 bg-secondary/50 rounded-lg border border-border hover:border-muted transition-colors">
       <ColorTag type={event.type} className="mt-1.5" />
       <div className="flex-1 min-w-0">
         <h4 className="text-lg font-medium text-foreground mb-2">{event.title}</h4>
-        {event.speakerId && <p className="text-sm text-muted-foreground mb-2">{event.speakerId}</p>}
+        {speakerName && <p className="text-sm text-muted-foreground mb-2">{speakerName}</p>}
         <div className="flex flex-wrap gap-4 text-sm text-muted-foreground">
           <span className="flex items-center gap-1.5">
             <MapPin className="w-4 h-4" />
