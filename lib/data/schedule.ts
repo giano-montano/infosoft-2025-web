@@ -24,6 +24,20 @@ export const EVENT_TYPE_COLORS: Record<EventType, string> = {
 
 export const SCHEDULE_DATA: DaySchedule[] = [
   {
+    date: "2025-12-17",
+    dayLabel: "Miércoles 17",
+    events: [
+      {
+        id: "1",
+        title: "Ceremonia de Apertura",
+        location: "Auditorio Principal",
+        time: "09:00 - 10:00",
+        type: "conference",
+      }
+      
+    ],
+  },
+  {
     date: "2025-12-18",
     dayLabel: "Jueves 18",
     events: [
