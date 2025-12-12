@@ -1,6 +1,6 @@
 import { SectionTitle } from "@/components/ui/section-title"
 import { PersonCard } from "@/components/ui/person-card"
-import { ORGANIZATION_DATA, ORGANIZATION_AREAS } from "@/lib/data/organization"
+import { getOrganization } from "@/lib/content"
 import { Metadata } from "next"
 
 export const metadata: Metadata = {
@@ -12,15 +12,20 @@ export const metadata: Metadata = {
   },
 };
 
-export default function Organization() {
+export default async function Organization() {
+  const organizationData = await getOrganization();
+  
+  // Get unique areas maintaining order
+  const areas = Array.from(new Set(organizationData.map(m => m.area)));
+
   return (
     <section id="organization" className="py-24 md:py-32 bg-card">
       <div className="container mx-auto px-4 md:px-6">
         <SectionTitle className="mb-12">Organización</SectionTitle>
 
         <div className="space-y-12">
-          {ORGANIZATION_AREAS.map((area) => {
-            const members = ORGANIZATION_DATA.filter((m) => m.area === area)
+          {areas.map((area) => {
+            const members = organizationData.filter((m) => m.area === area)
             return (
               <div key={area}>
                 <h3 className="text-xl font-semibold mb-6 text-foreground">{area}</h3>

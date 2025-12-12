@@ -1,7 +1,7 @@
 // lib/content.ts
 import fs from "fs/promises";
 import path from "path";
-import { Speaker, DaySchedule } from "./types";
+import { Speaker, DaySchedule, TeamMember } from "./types";
 
 const CONTENT_DIR = process.env.CONTENT_DIR || path.join(process.cwd(), "data");
 const IMAGES_PREFIX = "/content/images"; // URL base pública (configurar en nginx o servir estático)
@@ -18,6 +18,10 @@ export async function getSpeakers(): Promise<Speaker[]> {
 
 export async function getSchedule(): Promise<DaySchedule[]> {
   return readJSON<DaySchedule[]>("schedule.json");
+}
+
+export async function getOrganization(): Promise<TeamMember[]> {
+  return readJSON<TeamMember[]>("organization.json");
 }
 
 /**

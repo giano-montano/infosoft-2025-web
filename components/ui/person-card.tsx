@@ -22,8 +22,8 @@ export function PersonCard({ name, role, subtitle, avatar, talks, linkedin }: Pe
   return (
     <div className="p-6 bg-secondary/50 rounded-lg border border-border">
       <div className="flex items-start gap-4">
-        <Avatar className="w-16 h-16 shrink-0">
-          <AvatarImage src={avatar || "/placeholder.svg"} alt={name} />
+        <Avatar className="w-16 h-16 shrink-0 ">
+          <AvatarImage src={avatar || "/placeholder.svg"} alt={name} className="object-cover"/>
           <AvatarFallback className="bg-muted text-foreground">{initials}</AvatarFallback>
         </Avatar>
         <div className="flex-1 min-w-0">

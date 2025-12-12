@@ -1,6 +1,15 @@
 // lib/types.ts
 export type EventType = "workshop" | "conference" | "panel" | "networking";
 
+export interface TeamMember {
+  id: string;
+  name: string;
+  role: string;
+  area: string;
+  avatar: string;
+  linkedin?: string;
+}
+
 export interface Speaker {
   id: string;
   name: string;
