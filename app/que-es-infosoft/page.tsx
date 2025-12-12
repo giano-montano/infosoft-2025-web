@@ -5,6 +5,8 @@ import { SectionTitle } from "@/components/ui/section-title"
 import { STATS_DATA } from "@/lib/data/stats"
 import { Button } from "@/components/ui/button"
 
+// Note: metadata in layout.tsx since this is a client component
+
 const CAROUSEL_IMAGES = [
   "/tech-conference-2020.jpg",
   "/university-event-speakers.jpg",

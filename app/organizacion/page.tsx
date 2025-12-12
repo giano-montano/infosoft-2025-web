@@ -1,6 +1,16 @@
 import { SectionTitle } from "@/components/ui/section-title"
 import { PersonCard } from "@/components/ui/person-card"
 import { ORGANIZATION_DATA, ORGANIZATION_AREAS } from "@/lib/data/organization"
+import { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Organización",
+  description: "Conoce al equipo organizador de INFOSOFT 2025. Estudiantes y profesionales de PUCP comprometidos con crear el mejor evento de tecnología.",
+  openGraph: {
+    title: "Organización | INFOSOFT 2025",
+    description: "El equipo detrás de INFOSOFT 2025: estudiantes y profesionales comprometidos con la innovación.",
+  },
+};
 
 export default function Organization() {
   return (

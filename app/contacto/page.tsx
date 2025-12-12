@@ -10,6 +10,9 @@ import { Textarea } from "@/components/ui/textarea"
 import { Checkbox } from "@/components/ui/checkbox"
 import { Label } from "@/components/ui/label"
 
+// Note: metadata cannot be exported from client components
+// Consider creating a layout.tsx in this folder or converting to server component
+
 export default function Contact() {
   const [isSubscribed, setIsSubscribed] = useState(false)
 

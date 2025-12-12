@@ -3,6 +3,16 @@ import { SectionTitle } from "@/components/ui/section-title"
 import { PersonCard } from "@/components/ui/person-card"
 import { SPEAKERS_DATA } from "@/lib/data/speakers"
 import { getSpeakers, resolveSpeakerAvatarUrl } from "@/lib/content";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Ponentes",
+  description: "Conoce a los expertos líderes en tecnología e innovación que compartirán su conocimiento en INFOSOFT 2025. Speakers destacados de la industria tech.",
+  openGraph: {
+    title: "Ponentes | INFOSOFT 2025",
+    description: "Expertos líderes en tecnología e innovación que transforman la industria. Conoce a nuestros speakers.",
+  },
+};
 
 export  default async function Speakers() {
 
