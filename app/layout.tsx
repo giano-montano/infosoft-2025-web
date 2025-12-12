@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     {name:"AEDITIP", url:"https://www.linkedin.com/company/aeditip/"},
     {name: "Giano Montano", url: "https://www.linkedin.com/in/giano-monta%C3%B1o-8b1537349/"}
   ],
-  creator: "AEDITIP",
+  creator: "Giano Montano",
   publisher: "PUCP - Pontificia Universidad Católica del Perú",
   openGraph: {
     type: 'website',
