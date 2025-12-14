@@ -1,26 +1,26 @@
 [
   {
     "id": "1",
-    "name": "Roberto Sánchez",
+    "name": "Jairo Martín Montoya Anco",
     "role": "Director General",
     "area": "Dirección",
-    "avatar": "/professional-man-director.jpg",
-    "linkedin": "https://linkedin.com"
+    "avatar": "organization/jairoMontoya.jpeg",
+    "linkedin": "https://www.linkedin.com/in/jairo-martin-montoya-anco-1005jy/"
   },
   {
     "id": "2",
-    "name": "Patricia Vega",
+    "name": "Yngrid Hurtado Asto",
     "role": "Coordinadora Académica",
     "area": "Dirección",
-    "avatar": "/professional-woman-coordinator.jpg",
-    "linkedin": "https://linkedin.com"
+    "avatar": "organization/yngridHurtado.jpeg",
+    "linkedin": "https://www.linkedin.com/in/yngrid-hurtado-asto/"
   },
   {
     "id": "3",
     "name": "Luis Fernández",
     "role": "Jefe de Logística",
     "area": "Logística",
-    "avatar": "/professional-man-logistics.jpg",
+    "avatar": "organization/professional-man-logistics.jpg",
     "linkedin": "https://linkedin.com"
   },
   {
@@ -28,23 +28,23 @@
     "name": "Carmen Ruiz",
     "role": "Coordinadora de Eventos",
     "area": "Logística",
-    "avatar": "/professional-woman-events.jpg",
+    "avatar": "organization/professional-woman-events.jpg",
     "linkedin": "https://linkedin.com"
   },
   {
     "id": "5",
-    "name": "Diego Morales",
-    "role": "Lead Developer",
+    "name": "Giano Montaño",
+    "role": "Full-stack Developer",
     "area": "Web",
-    "avatar": "/professional-man-web-developer.jpg",
-    "linkedin": "https://linkedin.com"
+    "avatar": "organization/giano.png",
+    "linkedin": "https://www.linkedin.com/in/giano-monta%C3%B1o-8b1537349/"
   },
   {
     "id": "6",
-    "name": "Sofía Castro",
-    "role": "UI/UX Designer",
+    "name": "AEDITIP",
+    "role": "UI/UX Designers",
     "area": "Web",
-    "avatar": "/professional-woman-designer.png",
-    "linkedin": "https://linkedin.com"
+    "avatar": "organization/aeditip.png",
+    "linkedin": "https://www.linkedin.com/company/aeditip/"
   }
 ]

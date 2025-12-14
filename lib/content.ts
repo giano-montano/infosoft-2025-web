@@ -25,11 +25,28 @@ export async function getOrganization(): Promise<TeamMember[]> {
 }
 
 /**
- * Devuelve la URL pública del avatar.
+ * Devuelve la URL pública del avatar de forma genérica.
+ * @param avatarPath - Ruta relativa como "speakers/carlos-mendoza.jpg" o "organization/maria-lopez.jpg"
+ * @param fallback - Imagen de fallback si no hay avatarPath
+ */
+export function resolveAvatarUrl(avatarPath?: string, fallback: string = "placeholder.jpg") {
+  const file = avatarPath && avatarPath.trim().length ? avatarPath : fallback;
+  return `${IMAGES_PREFIX}/${file}`;
+}
+
+/**
+ * Devuelve la URL pública del avatar de un speaker.
  * - avatarPath debe ser algo relativo como "speakers/carlos-mendoza.jpg"
  * - si no hay avatarPath, devuelve el fallback "speakers/default.jpg"
  */
 export function resolveSpeakerAvatarUrl(avatarPath?: string) {
-  const file = avatarPath && avatarPath.trim().length ? avatarPath : "speakers/default.jpg";
-  return `${IMAGES_PREFIX}/${file}`; // ejemplo: /content/images/speakers/carlos-mendoza.jpg
+  return resolveAvatarUrl(avatarPath, "speakers/default.jpg");
+}
+
+/**
+ * Devuelve la URL pública del avatar de un miembro de organización.
+ * @param avatarPath - Ruta relativa como "organization/nombre.jpg"
+ */
+export function resolveOrganizationAvatarUrl(avatarPath?: string) {
+  return resolveAvatarUrl(avatarPath, "organization/default.jpg");
 }

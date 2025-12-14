@@ -7,7 +7,7 @@ import { ColorTag } from "@/components/ui/color-tag";
 import type { DaySchedule, ScheduleEvent, Speaker } from "@/lib/types";
 
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { MapPin, Clock } from "lucide-react";
+import { MapPin, Clock, Linkedin } from "lucide-react";
 
 export const FORMAT_OPTIONS = [
   { value: "all", label: "Todos los formatos" },
@@ -23,8 +23,8 @@ export default function ProgramClient({ schedule, speakers }: { schedule: DaySch
 
   // Create speaker lookup map for O(1) access
   const speakerMap = useMemo(() => {
-    const map = new Map<string, string>();
-    speakers.forEach((speaker) => map.set(speaker.id, speaker.name));
+    const map = new Map<string, Speaker>();
+    speakers.forEach((speaker) => map.set(speaker.id, speaker));
     return map;
   }, [speakers]);
 
@@ -90,15 +90,30 @@ export default function ProgramClient({ schedule, speakers }: { schedule: DaySch
   );
 }
 
-function EventCard({ event, speakerMap }: { event: ScheduleEvent; speakerMap: Map<string, string> }) {
-  const speakerName = event.speakerId ? speakerMap.get(event.speakerId) : null;
+function EventCard({ event, speakerMap }: { event: ScheduleEvent; speakerMap: Map<string, Speaker> }) {
+  const speaker = event.speakerId ? speakerMap.get(event.speakerId) : null;
 
   return (
     <div className="flex gap-4 p-4 md:p-6 bg-secondary/50 rounded-lg border border-border hover:border-muted transition-colors">
       <ColorTag type={event.type} className="mt-1.5" />
       <div className="flex-1 min-w-0">
         <h4 className="text-lg font-medium text-foreground mb-2">{event.title}</h4>
-        {speakerName && <p className="text-sm text-muted-foreground mb-2">{speakerName}</p>}
+        {speaker && (
+          <div className="flex items-center gap-2 mb-2">
+            <p className="text-sm text-muted-foreground">{speaker.name}</p>
+            {speaker.linkedin && (
+              <a
+                href={speaker.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center text-muted-foreground hover:text-foreground transition-colors"
+                title={`Ver perfil de LinkedIn de ${speaker.name}`}
+              >
+                <Linkedin className="w-4 h-4" />
+              </a>
+            )}
+          </div>
+        )}
         <div className="flex flex-wrap gap-4 text-sm text-muted-foreground">
           <span className="flex items-center gap-1.5">
             <MapPin className="w-4 h-4" />

@@ -22,7 +22,8 @@ export  default async function Speakers() {
   const withAvatars = await Promise.all(
     speakers.map(async (s) => {
       const avatar = await resolveSpeakerAvatarUrl(s.avatar);
-      console.log("resuelto: ", avatar)
+      
+      console.log("Resolved avatar for speaker:", s.name, "->", avatar);
       return {
         ...s,
         avatar,
@@ -44,6 +45,7 @@ export  default async function Speakers() {
               subtitle={speaker.company ?? ""}
               avatar={speaker.avatar ?? "/professional-placeholder.png" }
               talks={speaker.talks ?? []}
+              linkedin={speaker.linkedin}
             />
           ))}
         </div>

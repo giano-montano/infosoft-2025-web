@@ -17,6 +17,7 @@ export interface Speaker {
   company?: string;
   avatar?: string; // ruta relativa dentro de CONTENT_DIR/images/
   talks?: { title: string; type: EventType }[];
+  linkedin?: string;
 }
 
 export interface ScheduleEvent {

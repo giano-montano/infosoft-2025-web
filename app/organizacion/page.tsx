@@ -1,6 +1,6 @@
 import { SectionTitle } from "@/components/ui/section-title"
 import { PersonCard } from "@/components/ui/person-card"
-import { getOrganization } from "@/lib/content"
+import { getOrganization, resolveOrganizationAvatarUrl } from "@/lib/content"
 import { Metadata } from "next"
 
 export const metadata: Metadata = {
@@ -15,8 +15,20 @@ export const metadata: Metadata = {
 export default async function Organization() {
   const organizationData = await getOrganization();
   
+  // Resolve avatar URLs server-side (parallel)
+  const withAvatars = await Promise.all(
+    organizationData.map(async (m) => {
+      const avatar = await resolveOrganizationAvatarUrl(m.avatar);
+      console.log("Resolved avatar for member:", m.name, "->", avatar);
+      return {
+        ...m,
+        avatar,
+      };
+    })
+  );
+  
   // Get unique areas maintaining order
-  const areas = Array.from(new Set(organizationData.map(m => m.area)));
+  const areas = Array.from(new Set(withAvatars.map(m => m.area)));
 
   return (
     <section id="organization" className="py-24 md:py-32 bg-card">
@@ -25,7 +37,7 @@ export default async function Organization() {
 
         <div className="space-y-12">
           {areas.map((area) => {
-            const members = organizationData.filter((m) => m.area === area)
+            const members = withAvatars.filter((m) => m.area === area)
             return (
               <div key={area}>
                 <h3 className="text-xl font-semibold mb-6 text-foreground">{area}</h3>

@@ -8,10 +8,8 @@ import { Button } from "@/components/ui/button"
 // Note: metadata in layout.tsx since this is a client component
 
 const CAROUSEL_IMAGES = [
-  "/tech-conference-2020.jpg",
-  "/university-event-speakers.jpg",
-  "/innovation-summit-audience.jpg",
-  "/technology-workshop-students.jpg",
+  "/conferencia1.jpg",
+  "/conferencia2.jpg",
 ]
 
 export default function QueEsINFOSOFT() {
