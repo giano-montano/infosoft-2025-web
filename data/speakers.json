@@ -4,61 +4,47 @@
     "name": "Gianpaul Custodio (HackeMate)",
     "role": "CEO & Founder",
     "company": "HackeMate",
-    "avatar": "speakers/gianpaul-custodio.jpg",
+    "avatar": "speakers/gianpaul.jpeg",
     "talks": [
       { "title": "Ciberseguridad Ofensiva y Hacking Ético", "type": "conference" }
-    ],
-    "linkedin": "https://www.linkedin.com/in/gianpaul-custodio/"
+    ]
   },
   {
     "id": "sergio-solvy",
     "name": "Sergio (Solvy)",
     "role": "Tech Lead",
     "company": "Solvy",
-    "avatar": "speakers/sergio-solvy.jpg",
-    "talks": [
-      { "title": "Innovación y Soluciones Ágiles", "type": "conference" }
-    ]
+    "avatar": "speakers/sergio-solvy.jpg"
   },
   {
     "id": "cesar-mendez",
     "name": "Ing. Cesar Mendez",
     "role": "Especialista Académico",
     "company": "Cibertec",
-    "avatar": "speakers/cesar-mendez.jpg",
-    "talks": [
-      { "title": "Tendencias Tecnológicas y Educación", "type": "conference" }
-    ]
+    "avatar": "speakers/cesar-mendez.jpg"
   },
   {
     "id": "david-cybersen",
     "name": "David (Cybersen)",
-    "role": "Security Consultant",
+    "role": "Vicepresidente y cofundador",
     "company": "Cybersen",
-    "avatar": "speakers/david-cybersen.jpg",
-    "talks": [
-      { "title": "Gestión de Riesgos Digitales", "type": "conference" }
-    ]
+    "avatar": "speakers/david.png",
+    "linkedin": "https://www.linkedin.com/in/d4vpro/"
   },
   {
     "id": "paola-cybersen",
     "name": "Paola (Cybersen)",
-    "role": "Analista de Ciberseguridad",
+    "role": "Pentester Jr. en Layer 8 Security",
     "company": "Cybersen",
-    "avatar": "speakers/paola-cybersen.jpg",
-    "talks": [
-      { "title": "Defensa en Profundidad", "type": "conference" }
-    ]
+    "avatar": "speakers/paola.jpeg",
+    "linkedin": "https://www.linkedin.com/in/paola-gerig-aka-nyx-671436238/"
   },
   {
     "id": "carlos-evangelista",
     "name": "Carlos Evangelista",
     "role": "CEO",
     "company": "Inkamoney",
-    "avatar": "speakers/carlos-evangelista.jpg",
-    "talks": [
-      { "title": "Fintech: Revolución de los Pagos Digitales", "type": "conference" }
-    ]
+    "avatar": "speakers/carlos-evangelista.jpg"
   },
   {
     "id": "sandro-ormeno",
@@ -66,39 +52,37 @@
     "role": "GDG Organizer & Tech Lead",
     "company": "Google Developer Groups",
     "avatar": "speakers/sandro-ormeno.jpg",
-    "talks": [
-      { "title": "Construyendo Comunidad y Tecnología Cloud", "type": "conference" }
-    ],
     "linkedin": "https://www.linkedin.com/in/sandro-ormeno/"
   },
   {
     "id": "leonardo-cybersen",
     "name": "Leonardo (Cybersen)",
-    "role": "Ingeniero de Seguridad",
+    "role": "Coordinador del comité competitivo",
     "company": "Cybersen",
-    "avatar": "speakers/leonardo-cybersen.jpg",
-    "talks": [
-      { "title": "Infraestructura Segura", "type": "conference" }
-    ]
+    "avatar": "speakers/leonardo.jpeg",
+    "linkedin":"https://www.linkedin.com/in/leonardo-bra%C3%B1es-a0781a273/"
   },
   {
     "id": "yiro-mendez",
     "name": "Yiro Mendez",
     "role": "Representante DIIA",
     "company": "DIIA PUCP",
-    "avatar": "speakers/yiro-mendez.jpg",
-    "talks": [
-      { "title": "Inteligencia Artificial y Data Science", "type": "conference" }
-    ]
+    "avatar": "speakers/yiro-mendez.jpg"
   },
   {
     "id": "ridber-cybersen",
     "name": "Ridber (Cybersen)",
     "role": "Pentester Senior",
     "company": "Cybersen",
-    "avatar": "speakers/ridber-cybersen.jpg",
-    "talks": [
-      { "title": "Auditoría de Sistemas Críticos", "type": "conference" }
-    ]
+    "avatar": "speakers/ridber.jpeg",
+    "linkedin": "https://www.linkedin.com/in/ridber-miguel-rodr%C3%ADguez-s%C3%A1nchez-9289b0238/"
+  },
+    {
+    "id": "benjamin-toro",
+    "name": "Benjamin Toro",
+    
+    "company": "CSH",
+    "avatar": "speakers/benjamin.jpeg"
+
   }
 ]

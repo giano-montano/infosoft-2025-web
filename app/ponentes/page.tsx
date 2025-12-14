@@ -2,7 +2,7 @@
 import { SectionTitle } from "@/components/ui/section-title"
 import { PersonCard } from "@/components/ui/person-card"
 import { SPEAKERS_DATA } from "@/lib/data/speakers"
-import { getSpeakers, resolveSpeakerAvatarUrl } from "@/lib/content";
+import { getSpeakers, resolveSpeakerAvatarUrl, getSchedule } from "@/lib/content";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -16,17 +16,29 @@ export const metadata: Metadata = {
 
 export  default async function Speakers() {
 
-  const speakers = await getSpeakers();
+  const [speakers, schedule] = await Promise.all([getSpeakers(), getSchedule()]);
 
-   // resolve avatar urls server-side (parallel)
+  // Get all events from schedule
+  const allEvents = schedule.flatMap(day => day.events);
+
+   // resolve avatar urls and talks from schedule (parallel)
   const withAvatars = await Promise.all(
     speakers.map(async (s) => {
       const avatar = await resolveSpeakerAvatarUrl(s.avatar);
+      
+      // Get talks from schedule based on speakerId
+      const talks = allEvents
+        .filter(event => event.speakerId === s.id)
+        .map(event => ({
+          title: event.title,
+          type: event.type
+        }));
       
       console.log("Resolved avatar for speaker:", s.name, "->", avatar);
       return {
         ...s,
         avatar,
+        talks,
       };
     })
   );

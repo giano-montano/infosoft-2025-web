@@ -6,14 +6,14 @@
       {
         "id": "d17-01",
         "title": "Inauguración y Bienvenida",
-        "location": "Auditorio Principal",
+        "location": "Auditorio de FCI",
         "time": "13:00 - 13:30",
         "type": "networking"
       },
       {
         "id": "d17-02",
         "title": "Ciberseguridad Ofensiva y Hacking Ético",
-        "location": "Auditorio Principal",
+        "location": "Auditorio de FCI",
         "time": "13:30 - 14:30",
         "type": "conference",
         "speakerId": "gianpaul-custodio"
@@ -21,7 +21,7 @@
       {
         "id": "d17-03",
         "title": "Innovación y Soluciones Ágiles",
-        "location": "Sala A",
+        "location": "Auditorio de FCI",
         "time": "14:30 - 15:00",
         "type": "conference",
         "speakerId": "sergio-solvy"
@@ -29,7 +29,7 @@
       {
         "id": "d17-04",
         "title": "Tendencias Tecnológicas y Educación",
-        "location": "Sala A",
+        "location": "Auditorio de FCI",
         "time": "15:00 - 16:00",
         "type": "conference",
         "speakerId": "cesar-mendez"
@@ -37,14 +37,14 @@
       {
         "id": "d17-break",
         "title": "Coffee Break",
-        "location": "Jardines",
+        "location": "Auditorio de FCI",
         "time": "16:00 - 16:30",
         "type": "networking"
       },
       {
         "id": "d17-05",
         "title": "Construyendo Comunidad y Tecnología Cloud",
-        "location": "Auditorio Principal",
+        "location": "Auditorio de FCI",
         "time": "16:30 - 17:30",
         "type": "conference",
         "speakerId": "sandro-ormeno"
@@ -52,7 +52,7 @@
       {
         "id": "d17-06",
         "title": "Inteligencia Artificial y Data Science",
-        "location": "Auditorio Principal",
+        "location": "Auditorio de FCI",
         "time": "17:30 - 18:30",
         "type": "conference",
         "speakerId": "yiro-mendez"
@@ -66,22 +66,22 @@
       {
         "id": "d18-01",
         "title": "Bienvenida - Día 2",
-        "location": "Auditorio Principal",
+        "location": "Auditorio de FCI",
         "time": "13:00 - 13:30",
         "type": "networking"
       },
       {
         "id": "d18-02",
-        "title": "Gestión de Riesgos Digitales",
-        "location": "Sala B",
+        "title": "Hardware Hacking: Más allá de las herramientas estándar",
+        "location": "Auditorio de FCI",
         "time": "13:30 - 14:30",
         "type": "conference",
         "speakerId": "david-cybersen"
       },
       {
         "id": "d18-03",
-        "title": "Defensa en Profundidad",
-        "location": "Sala B",
+        "title": "De Novato a Ninja: Explora los CTFs y Conquista las Banderas",
+        "location": "Auditorio de FCI",
         "time": "14:30 - 15:30",
         "type": "conference",
         "speakerId": "paola-cybersen"
@@ -89,7 +89,7 @@
       {
         "id": "d18-04",
         "title": "Fintech: Revolución de los Pagos Digitales",
-        "location": "Auditorio Principal",
+        "location": "Auditorio de FCI",
         "time": "15:30 - 16:00",
         "type": "conference",
         "speakerId": "carlos-evangelista"
@@ -97,22 +97,22 @@
       {
         "id": "d18-break",
         "title": "Coffee Break",
-        "location": "Jardines",
+        "location": "Auditorio de FCI",
         "time": "16:00 - 16:30",
         "type": "networking"
       },
       {
         "id": "d18-05",
-        "title": "Infraestructura Segura",
-        "location": "Sala B",
+        "title": "Broken Access Control - OWASP Top 10 2025",
+        "location": "Auditorio de FCI",
         "time": "16:30 - 17:30",
         "type": "conference",
         "speakerId": "leonardo-cybersen"
       },
       {
         "id": "d18-06",
-        "title": "Auditoría de Sistemas Críticos",
-        "location": "Sala B",
+        "title": "Como iniciar en hacking WiFi",
+        "location": "Auditorio de FCI",
         "time": "17:30 - 18:30",
         "type": "conference",
         "speakerId": "ridber-cybersen"
@@ -124,44 +124,52 @@
     "dayLabel": "Viernes 19",
     "events": [
       {
-        "id": "d19-01",
+        "id": "d19-99",
         "title": "Bienvenida - Día 3",
-        "location": "Auditorio Principal",
-        "time": "13:00 - 13:30",
+        "location": "Auditorio de FCI",
+        "time": "12:00 - 12:30",
         "type": "networking"
+      },
+      {
+        "id": "d19-01",
+        "title": "Inauguración y Bienvenida",
+        "location": "Auditorio de FCI",
+        "time": "12:30 - 13:30",
+        "type": "conference",
+        "speakerId": "benjamin-toro"
       },
       {
         "id": "d19-02",
         "title": "Keynote Microsoft: El Futuro de la IA",
-        "location": "Auditorio Principal",
+        "location": "Auditorio de FCI",
         "time": "13:30 - 14:30",
         "type": "conference"
       },
       {
         "id": "d19-03",
         "title": "Panel Laureate: Educación y Tech",
-        "location": "Sala A",
+        "location": "Auditorio de FCI",
         "time": "14:30 - 15:30",
         "type": "panel"
       },
       {
         "id": "d19-networking",
         "title": "Coffee Break",
-        "location": "Jardines",
+        "location": "Auditorio de FCI",
         "time": "16:00 - 16:30",
         "type": "networking"
       },
       {
         "id": "d19-04",
         "title": "Transformación Digital en la Banca (BCP)",
-        "location": "Auditorio Principal",
+        "location": "Auditorio de FCI",
         "time": "16:30 - 18:00",
         "type": "conference"
       },
       {
         "id": "d19-05",
         "title": "Desarrollo de Videojuegos con Goblin",
-        "location": "Laboratorio 1",
+        "location": "Auditorio de FCI",
         "time": "18:00 - 18:30",
         "type": "workshop"
       }

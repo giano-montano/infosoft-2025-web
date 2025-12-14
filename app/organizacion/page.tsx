@@ -19,7 +19,7 @@ export default async function Organization() {
   const withAvatars = await Promise.all(
     organizationData.map(async (m) => {
       const avatar = await resolveOrganizationAvatarUrl(m.avatar);
-      console.log("Resolved avatar for member:", m.name, "->", avatar);
+      // console.log("Resolved avatar for member:", m.name, "->", avatar);
       return {
         ...m,
         avatar,
