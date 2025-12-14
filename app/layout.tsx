@@ -52,6 +52,22 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://infosoft.inf.pucp.edu.pe',
   },
+  icons: {
+    icon: [
+      { url: '/icon.png', sizes: '512x512', type: 'image/png' },
+      { url: '/icon.png', sizes: '192x192', type: 'image/png' },
+      { url: '/icon.png', sizes: '32x32', type: 'image/png' },
+    ],
+    apple: [
+      { url: '/icon.png', sizes: '180x180', type: 'image/png' },
+    ],
+    other: [
+      {
+        rel: 'icon',
+        url: '/icon.png',
+      },
+    ],
+  },
 }
 
 export default function RootLayout({
