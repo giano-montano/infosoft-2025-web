@@ -40,8 +40,8 @@ export default function AbstractInfosoftFigure({
             
             // Esperar 1s (para que termine la transición) y repetir
             timeout3 = setTimeout(runCycle, 1000)
-          }, 5000)
-        }, 2000)
+          }, 4500) //<- lo que esperas con colores
+        }, 1500) //<- lo que esperas sin colores
       }
 
       runCycle()
@@ -120,7 +120,7 @@ export default function AbstractInfosoftFigure({
                     {/* Círculo invisible para detectar hover Y clicks (área circular completa) */}
                     {/* Solo activar hover manual en dispositivos no táctiles */}
                     <a 
-                        href="https://www.pucp.edu.pe" 
+                        href="https://luma.com/bl6vwnic" 
                         target="_blank" 
                         rel="noopener noreferrer"
                         style={{ cursor: 'pointer' }}

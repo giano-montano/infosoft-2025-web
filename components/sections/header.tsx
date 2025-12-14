@@ -49,7 +49,7 @@ export function Header() {
             <a  
                 target='_blank' 
                 rel='noopener noreferrer'
-                href='https://www.pucp.edu.pe'
+                href='https://luma.com/bl6vwnic'
                 className='relative text-sm h-12 w-45 flex items-center justify-center text-neutral-400 font-medium overflow-hidden group'
               >
                 <span className='absolute inset-0 bg-gradient-to-r from-yellow-400 via-orange-500 to-pink-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out'></span>
@@ -87,7 +87,7 @@ export function Header() {
             ))}
             
             <a
-                href='https://www.pucp.edu.pe'
+                href='https://luma.com/bl6vwnic'
                 target='_blank'
                 rel='noopener noreferrer'
                 className='text-center py-3 rounded-md bg-linear-to-r from-yellow-400 via-orange-500 to-pink-500                 text-white font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg'
