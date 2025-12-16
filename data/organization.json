@@ -1,7 +1,7 @@
 [
   {
     "id": "1",
-    "name": "Jairo Martín Montoya Anco",
+    "name": "Jairo Montoya",
     "role": "Director General",
     "area": "Dirección",
     "avatar": "organization/jairo.jpeg",
@@ -9,28 +9,71 @@
   },
   {
     "id": "2",
-    "name": "Yngrid Hurtado Asto",
-    "role": "Coordinadora Académica",
+    "name": "Yngrid Hurtado",
+    "role": "Coordinadora principal",
     "area": "Dirección",
     "avatar": "organization/yngrid.jpeg",
     "linkedin": "https://www.linkedin.com/in/yngrid-hurtado-asto/"
   },
+    {
+    "id": "88",
+    "name": "Fredy Polar",
+    "role": "Director general de Relaciones Públicas",
+    "area": "Dirección",
+    "avatar": "organization/fredy.jpg",
+    "linkedin": "https://www.linkedin.com/in/fredy-alberto-polar-urviola/"
+  },
+
+
+
+
+
   {
     "id": "3",
-    "name": "Luis Fernández",
-    "role": "Jefe de Logística",
+    "name": "Sebastian Martin",
+    "role": "Asistente",
     "area": "Logística",
-    "avatar": "organization/professional-man-logistics.jpg",
-    "linkedin": "https://linkedin.com"
+    
+    "linkedin": "https://www.linkedin.com/in/sebastianmartinf/"
   },
+  
   {
-    "id": "4",
-    "name": "Carmen Ruiz",
-    "role": "Coordinadora de Eventos",
+    "id": "r32",
+    "name": "Luciana Pastor",
+    "role": "Asistente",
     "area": "Logística",
-    "avatar": "organization/professional-woman-events.jpg",
-    "linkedin": "https://linkedin.com"
+    "avatar": "organization/luciana.png",
+    "linkedin": "https://www.linkedin.com/in/luciana-muriel-pastor-fortún-082052228"
   },
+
+  
+
+
+  
+
+
+    {
+    "id": "401",
+    "name": "Daniel Mamani",
+    "role": "Coordinador de eventos",
+    "area": "Eventos",
+    "avatar": "organization/daniel_copia.png",
+    "linkedin": "www.linkedin.com/in/carlos-daniel-mamani-ortiz-3a2314376"
+  },
+    {
+    "id": "402",
+    "name": "Jorge Chamorro",
+    "role": "Moderador",
+    "area": "Eventos",
+    "avatar": "organization/JorgeChamorro.png",
+    "linkedin": "https://www.linkedin.com/in/jorgechamorrocayetano/"
+  },
+
+
+
+
+
+
   {
     "id": "5",
     "name": "Giano Montaño",
