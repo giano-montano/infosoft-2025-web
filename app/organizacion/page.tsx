@@ -3,6 +3,8 @@ import { PersonCard } from "@/components/ui/person-card"
 import { getOrganization, resolveOrganizationAvatarUrl } from "@/lib/content"
 import { Metadata } from "next"
 
+  export const revalidate = 300; // Revalidar cada 5 minutos
+
 export const metadata: Metadata = {
   title: "Organización",
   description: "Conoce al equipo organizador de INFOSOFT 2025. Estudiantes y profesionales de PUCP comprometidos con crear el mejor evento de tecnología.",

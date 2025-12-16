@@ -3,6 +3,8 @@ import { getSchedule, getSpeakers } from "@/lib/content";
 import ProgramClient from "./ProgramClient";
 import { Metadata } from "next";
 
+  export const revalidate = 300; // Revalidar cada 5 minutos
+  
 export const metadata: Metadata = {
   title: "Programa",
   description: "Descubre el programa completo de INFOSOFT 2025: workshops, conferencias, paneles y sesiones de networking. 17-19 de Diciembre, Campus PUCP.",

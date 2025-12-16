@@ -5,6 +5,8 @@ import { SPEAKERS_DATA } from "@/lib/data/speakers"
 import { getSpeakers, resolveSpeakerAvatarUrl, getSchedule } from "@/lib/content";
 import { Metadata } from "next";
 
+export const revalidate = 300; // Revalidar cada 5 minutos
+
 export const metadata: Metadata = {
   title: "Ponentes",
   description: "Conoce a los expertos líderes en tecnología e innovación que compartirán su conocimiento en INFOSOFT 2025. Speakers destacados de la industria tech.",
