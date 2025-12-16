@@ -62,7 +62,7 @@
   },
     {
     "id": "402",
-    "name": "Jorge Chamorro",
+    "name": "Jorge Josue Chamorro Cayetano",
     "role": "Moderador",
     "area": "Eventos",
     "avatar": "organization/JorgeChamorro.png",
@@ -88,6 +88,38 @@
     "role": "UI/UX Designers",
     "area": "Web",
     "avatar": "organization/aeditip.png",
-    "linkedin": "https://www.linkedin.com/company/aeditip/"
+    "linkedin": "https://www.linkedin.com/company/aeditip/posts/?feedView=all"
+  },
+  {
+    "id": "403",
+    "name": "María Alejandra Nacarino",
+    "role": "Moderador",
+    "area": "Eventos",
+    "avatar": "organization/Mariale.jpeg",
+    "linkedin": "https://www.linkedin.com/in/mar%C3%ADa-alejandra-nacarino-a7871a2a3/"
+  },
+  {
+    "id": "404",
+    "name": "Oscar Céspedes",
+    "role": "Moderador",
+    "area": "Eventos",
+    "avatar": "organization/OscarCéspedes.jpeg",
+    "linkedin": "https://www.linkedin.com/in/oscar-céspedes-vasquez-6724662a7/"
+  },
+  {
+    "id": "405",
+    "name": "Edward Delgadillo",
+    "role": "Moderador",
+    "area": "Eventos",
+    "avatar": "organization/edwardDelgadillo.png",
+    "linkedin": "https://www.linkedin.com/in/edward-delgadillo-agurto/"
+  },
+  {
+    "id": "406",
+    "name": "Jaritza Maribel Villanueva Huaraca",
+    "role": "Moderador",
+    "area": "Eventos",
+    "avatar": "organization/JaritzaVillanueva.jpeg",
+    "linkedin": "https://www.linkedin.com/in/jaritza-maribel-villanueva-huaraca/"
   }
 ]

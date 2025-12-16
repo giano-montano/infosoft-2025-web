@@ -1,20 +1,19 @@
 [
   {
     "id": "gianpaul-custodio",
-    "name": "Gianpaul Custodio (HackeMate)",
-    "role": "CEO & Founder",
+    "name": "Gianpaul Custodio Chavarría",
+    "role": "Ingeniero de Ciberseguridad",
     "company": "HackeMate",
-    "avatar": "speakers/gianpaul.jpeg",
-    "talks": [
-      { "title": "Ciberseguridad Ofensiva y Hacking Ético", "type": "conference" }
-    ]
+    "avatar": "speakers/Gianpaul Custodio Chavarría.jpeg",
+    "linkedin": "https://www.linkedin.com/in/gianpaul-custodio-chavarria/",
+    "description": "Ingeniero de Ciberseguridad y creador de contenido en Youtube: HackeMate"
   },
   {
     "id": "sergio-solvy",
-    "name": "Sergio (Solvy)",
+    "name": "Sergio Adrián Hernández Leon",
     "role": "Tech Lead",
     "company": "Solvy",
-    "avatar": "speakers/sergio-solvy.jpg"
+    "avatar": "speakers/Sergio Adrián Hernández Leon.jpeg"
   },
   {
     "id": "cesar-mendez",
@@ -25,19 +24,21 @@
   },
   {
     "id": "david-cybersen",
-    "name": "David (Cybersen)",
+    "name": "David Laura Gonzales",
     "role": "Vicepresidente y cofundador",
     "company": "Cybersen",
-    "avatar": "speakers/david.png",
-    "linkedin": "https://www.linkedin.com/in/d4vpro/"
+    "avatar": "speakers/David Laura.png",
+    "linkedin": "https://www.linkedin.com/in/d4vpro/",
+    "description": "Estudiante de Ingeniería de Sistemas, entusiasta del Hardware Hacking y la Radiofrecuencia."
   },
   {
     "id": "paola-cybersen",
-    "name": "Paola (Cybersen)",
-    "role": "Pentester Jr. en Layer 8 Security",
+    "name": "Paola Gerig Reyes",
+    "role": "Presidenta y fundadora",
     "company": "Cybersen",
-    "avatar": "speakers/paola.jpeg",
-    "linkedin": "https://www.linkedin.com/in/paola-gerig-aka-nyx-671436238/"
+    "avatar": "speakers/Paola Gerig.jpeg",
+    "linkedin": "https://www.linkedin.com/in/paola-gerig-aka-nyx-671436238/",
+    "description": "Estudiante de la carrera de Ciberseguridad, pentester Jr. y competidora activa en CTFs."
   },
   {
     "id": "carlos-evangelista",
@@ -48,19 +49,21 @@
   },
   {
     "id": "sandro-ormeno",
-    "name": "Sandro Ormeño",
-    "role": "AI Researcher",
+    "name": "Sandro Alex Ormeño Granda",
+    "role": "Diseñador industrial y divulgador de temas sobre IA generativa",
     "company": "Google Developer Groups",
-    "avatar": "speakers/sandro.jpeg",
-    "linkedin": "https://www.linkedin.com/in/sandro-orme%C3%B1o-3826196b/"
+    "avatar": "speakers/sandro ormeño.jpg",
+    "linkedin": "https://www.linkedin.com/in/sandro-orme%C3%B1o-3826196b/",
+    "description": "Sandro Ormeño Granda es Diseñador Industrial con 16 años de experiencia docente en los campos de diseño, videojuegos, representación 3D, electrónica y tecnología. Actualmente se dedica a la divulgación de temas de IA generativa a través de conferencias, entre las que destacan: \"Introducción a redes neuronales\" (DevFest Lima 2019, Google); \"Arte y diseño\" (FATEC-UNI, 2019); \"Nuevas tecnologías y la IA en arte y diseño: desafíos y oportunidades\" (Facultad de Arte y Diseño, PUCP, 2019); \"Redes neuronales en microcontroladores\" (Universidad Católica de Santa María, Arequipa, 2020); \"Supervised learning y Reinforcement learning\" (Universidad Galileo, Guatemala, 2020); \"Redes neuronales para el desarrollo de diseño y arte\" (PUCP, 2023); \"Mundo Geek\" (Universidad de Lima, 2024); \"Metodologías para recuperación de información en sistemas RAG\" (DevFest Lima 2024, GDG Lima); \"GraphRAG: el poder de los grafos de conocimiento\" (Build with AI, GDG Open 2025); y \"GraphRAG en la era de los LLMs\" (DevFest Lima 2025, GDG Lima)."
   },
   {
     "id": "leonardo-cybersen",
-    "name": "Leonardo (Cybersen)",
-    "role": "Coordinador del comité competitivo",
+    "name": "Leonardo Brañes",
+    "role": "Coordinador del Comité Competitivo",
     "company": "Cybersen",
-    "avatar": "speakers/leonardo.jpeg",
-    "linkedin":"https://www.linkedin.com/in/leonardo-bra%C3%B1es-a0781a273/"
+    "avatar": "speakers/Leonardo Brañes.jpeg",
+    "linkedin":"https://www.linkedin.com/in/leonardo-bra%C3%B1es-a0781a273/",
+    "description": "Egresado de la carrera de Ciberseguridad, pentester y competidor activo en CTFs."
   },
   {
     "id": "yiro-mendez",
@@ -71,18 +74,28 @@
   },
   {
     "id": "ridber-cybersen",
-    "name": "Ridber (Cybersen)",
-    "role": "Pentester Senior",
+    "name": "Ridber Miguel Rodríguez Sánchez",
+    "role": "Coordinador del Comité de Investigación",
     "company": "Cybersen",
-    "avatar": "speakers/ridber.jpeg",
-    "linkedin": "https://www.linkedin.com/in/ridber-miguel-rodr%C3%ADguez-s%C3%A1nchez-9289b0238/"
+    "avatar": "speakers/Ridber Rodríguez.jpeg",
+    "linkedin": "https://www.linkedin.com/in/ridber-miguel-rodr%C3%ADguez-s%C3%A1nchez-9289b0238/",
+    "description": "Estudiante de la carrera de Ciberseguridad, CTI Analyst y competidor activo en CTFs."
   },
-    {
+  {
     "id": "benjamin-toro",
-    "name": "Benjamin Toro",
-    
+    "name": "Benjamin Toro Leddihn",
+    "role": "Vicepresidente de CSH",
     "company": "CSH",
-    "avatar": "speakers/benjamin.jpeg"
-
+    "avatar": "speakers/Benjamin Toro.jpeg",
+    "linkedin": "https://www.linkedin.com/in/benjamin-toro-leddihn-38334650/",
+    "description": "Benjamin Toro es estudiante de Computer Science con una trayectoria profesional que integra negocios, tecnología y ciberseguridad. Inició su carrera en gestión y expansión comercial, experiencia que le permitió desarrollar una visión estratégica orientada a crecimiento, toma de decisiones y creación de valor en entornos competitivos. Es cofundador y vicepresidente de CSH, un club de ciberseguridad enfocado en la formación técnica, el liderazgo y la construcción de comunidad. Además, se desempeña como consultor comercial independiente para ByLight, donde conecta necesidades empresariales con soluciones tecnológicas y de seguridad, trabajando con equipos y organizaciones a nivel regional."
+  },
+  {
+    "id": "carla-vanesa-mamani",
+    "name": "Carla Vanesa Mamani Chavez",
+    "role": "MVP de IA",
+    "company": "Microsoft",
+    "avatar": "speakers/carla-vanesa.jpeg",
+    "linkedin": "https://www.linkedin.com/in/carlychavez1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
   }
 ]

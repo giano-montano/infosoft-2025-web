@@ -12,15 +12,16 @@
       },
       {
         "id": "d17-02",
-        "title": "Ciberseguridad Ofensiva y Hacking Ético",
+        "title": "Hackeando tu información con 1 link",
         "location": "Auditorio de FCI",
         "time": "13:30 - 14:30",
         "type": "conference",
-        "speakerId": "gianpaul-custodio"
+        "speakerId": "gianpaul-custodio",
+        "description": "El peligro de ingresar a enlaces maliciosos que pueden robar tu información en segundos."
       },
       {
         "id": "d17-03",
-        "title": "Innovación y Soluciones Ágiles",
+        "title": "Cómo blockchain está redefiniendo los bienes raíces: trazabilidad, acceso y nuevos modelos",
         "location": "Auditorio de FCI",
         "time": "14:30 - 15:00",
         "type": "conference",
@@ -47,7 +48,8 @@
         "location": "Auditorio de FCI",
         "time": "16:30 - 17:30",
         "type": "conference",
-        "speakerId": "sandro-ormeno"
+        "speakerId": "sandro-ormeno",
+        "description": "La conferencia se centra en GraphRAG y la recuperación de información mediante grafos de conocimiento. El expositor introduce de manera didáctica los conceptos fundamentales de nodos y relaciones, explorando así las amplias posibilidades que ofrecen los grafos y el potencial de la recuperación de información con Cypher. Posteriormente, se presenta una herramienta automatizada que permite acceder a la información a través de diversos métodos, abordando también el desafío del uso considerable de tokens al consultar los LLMs."
       },
       {
         "id": "d17-06",
@@ -70,29 +72,31 @@
         "time": "13:00 - 13:30",
         "type": "networking"
       },
+
       {
-        "id": "d18-02",
+        "id": "d18-03",
         "title": "Hardware Hacking: Más allá de las herramientas estándar",
         "location": "Auditorio de FCI",
         "time": "13:30 - 14:30",
         "type": "conference",
-        "speakerId": "david-cybersen"
+        "speakerId": "david-cybersen",
+        "description": "Exploraremos el panorama de herramientas disponibles y daremos paso a dispositivos no convencionales capaces de comprometer la seguridad física de formas inesperadas."
       },
       {
-        "id": "d18-03",
+        "id": "d18-04",
         "title": "De Novato a Ninja: Explora los CTFs y Conquista las Banderas",
         "location": "Auditorio de FCI",
         "time": "14:30 - 15:30",
         "type": "conference",
-        "speakerId": "paola-cybersen"
+        "speakerId": "paola-cybersen",
+        "description": "Charla introductoria al mundo de los CTF, explicando qué son, cómo funcionan, categorías comunes y por qué son esenciales para el hacking ético."
       },
       {
-        "id": "d18-04",
-        "title": "Fintech: Revolución de los Pagos Digitales",
+        "id": "d18-05",
+        "title": "Como funciona una casa de cambio digital, IA en casa de cambio y propósito de marca",
         "location": "Auditorio de FCI",
         "time": "15:30 - 16:00",
-        "type": "conference",
-        "speakerId": "carlos-evangelista"
+        "type": "conference"
       },
       {
         "id": "d18-break",
@@ -102,20 +106,22 @@
         "type": "networking"
       },
       {
-        "id": "d18-05",
-        "title": "Broken Access Control - OWASP Top 10 2025",
+        "id": "d18-06",
+        "title": "Broken Access Control - OWASP Top 10",
         "location": "Auditorio de FCI",
         "time": "16:30 - 17:30",
         "type": "conference",
-        "speakerId": "leonardo-cybersen"
+        "speakerId": "leonardo-cybersen",
+        "description": "Analizaremos por qué esta falla sigue liderando los rankings globales y cómo los límites entre un usuario común y un administrador pueden desvanecerse con el fallo lógico más simple."
       },
       {
-        "id": "d18-06",
+        "id": "d18-07",
         "title": "Como iniciar en hacking WiFi",
         "location": "Auditorio de FCI",
         "time": "17:30 - 18:30",
         "type": "conference",
-        "speakerId": "ridber-cybersen"
+        "speakerId": "ridber-cybersen",
+        "description": "Explorando los secretos que viajan por el aire y la fragilidad de nuestras conexiones invisibles."
       }
     ]
   },
@@ -131,19 +137,21 @@
         "type": "networking"
       },
       {
-        "id": "d19-01",
-        "title": "Inauguración y Bienvenida",
+        "id": "d19-022",
+        "title": "Social Engineering: Dónde la ciberseguridad se encuentra con la psicología",
         "location": "Auditorio de FCI",
         "time": "12:30 - 13:30",
         "type": "conference",
-        "speakerId": "benjamin-toro"
+        "speakerId": "benjamin-toro",
+        "description": "La charla explora la ingeniería social como un fenómeno psicológico más que técnico, mostrando cómo los atacantes explotan sesgos cognitivos y emociones humanas para inducir decisiones inseguras. A través de ejemplos de Red Team, se analiza por qué incluso personas capacitadas siguen siendo vulnerables y por qué la seguridad efectiva depende de comprender el comportamiento humano."
       },
       {
         "id": "d19-02",
         "title": "Keynote Microsoft: El Futuro de la IA",
         "location": "Auditorio de FCI",
         "time": "13:30 - 14:30",
-        "type": "conference"
+        "type": "conference",
+        "speakerId": "carla-vanesa-mamani"
       },
       {
         "id": "d19-03",
